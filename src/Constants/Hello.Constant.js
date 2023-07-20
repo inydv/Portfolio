@@ -1,0 +1,15 @@
+export const helloConstant = [
+  "Bonjour",
+  "Ciao",
+  "Olá",
+  "Kia Ora",
+  "G'day",
+  "Geia",
+  "Konnichi Ha",
+  "Guten Tag",
+  "Salut",
+  "Nǐ hǎo",
+  "Zdravstvuyte",
+  "Hola",
+  "नमस्ते",
+];

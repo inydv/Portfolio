@@ -1,5 +1,9 @@
-function App() {
-  return <></>;
-}
+import { User } from "./Routes/index";
 
-export default App;
+export default function App() {
+  return (
+    <div>
+      <User />
+    </div>
+  );
+}
