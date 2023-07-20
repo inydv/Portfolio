@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Banner } from "../Components/index";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      Home
+      <Banner />
     </motion.div>
   );
 }

@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         hello: "#040406",
+        banner: "#F5F5F5",
       },
     },
   },
