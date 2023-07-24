@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        hello: "#040406",
-        banner: "#F5F5F5",
+        customBlack: "#040406",
       },
     },
   },

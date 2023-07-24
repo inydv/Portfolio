@@ -29,5 +29,6 @@ export default function Hello({ setIsHello }) {
     }, 150);
   }, [helloConstant]);
 
+  // HTML
   return <p className="text-white text-5xl">{name}</p>;
 }

@@ -14,22 +14,19 @@ export default function User() {
   // USE STATE
   const [isHello, setIsHello] = useState(true);
 
+  // HTML
   return (
     <div className="relative">
       <div
         className={
           isHello
-            ? "bg-hello h-[100vh] w-[100vw] grid place-items-center cursor-none absolute left-0 top-0"
-            : "bg-hello h-[100vh] w-[100vw] grid place-items-center cursor-none hello opacity-25 absolute left-0 top-0 -translate-y-[100%] transition-all ease-in-out duration-500 delay-300"
+            ? "bg-customBlack h-[100vh] w-[100vw] grid place-items-center cursor-none absolute left-0 top-0"
+            : "bg-customBlack h-[100vh] w-[100vw] grid place-items-center cursor-none hello opacity-25 absolute left-0 top-0 -translate-y-[100%] transition-all ease-in-out duration-500 delay-300"
         }
       >
         <Hello setIsHello={setIsHello} />
       </div>
-      <div
-        className={
-          isHello ? "hidden" : "max-w-[1920px] m-auto overflow-x-hidden"
-        }
-      >
+      <div className={isHello ? "hidden" : "block"}>
         <Header />
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>

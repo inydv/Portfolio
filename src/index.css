@@ -9,5 +9,8 @@
     padding: 0;
     font-family: 'Alice', serif;
     user-select: none;
-    user-zoom: none;
+}
+
+body {
+    overflow-x: hidden;
 }
