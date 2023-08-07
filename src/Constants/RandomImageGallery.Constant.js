@@ -5,7 +5,7 @@ import AboutImage4 from "../Assets/About-image-4.jpg";
 import AboutImage5 from "../Assets/About-image-5.jpg";
 import AboutImage6 from "../Assets/About-image-6.jpg";
 
-export const aboutImage = [
+export const randomImageGallery = [
   AboutImage1,
   AboutImage2,
   AboutImage3,

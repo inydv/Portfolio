@@ -1,9 +1,13 @@
+/* IMPORT GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
+/* TAILWIND */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+/* FOR ALL */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +15,19 @@
     user-select: none;
 }
 
+/* BODY */
 body {
     overflow-x: hidden;
+}
+
+/* BODY SCROLLBAR */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* NUMBER INPUT SPIN BUTTON */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

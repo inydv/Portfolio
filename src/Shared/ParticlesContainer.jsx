@@ -46,7 +46,7 @@ export default function ParticlesContainer() {
         },
         particles: {
           color: {
-            value: "#e68e2e",
+            value: "#f0bd84",
           },
           links: {
             color: "#f5d393",

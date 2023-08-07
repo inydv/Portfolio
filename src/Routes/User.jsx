@@ -21,7 +21,7 @@ export default function User() {
         className={
           isHello
             ? "bg-customBlack h-[100vh] w-[100vw] grid place-items-center cursor-none absolute left-0 top-0"
-            : "bg-customBlack h-[100vh] w-[100vw] grid place-items-center cursor-none hello opacity-25 absolute left-0 top-0 -translate-y-[100%] transition-all ease-in-out duration-500 delay-300"
+            : "bg-customBlack h-[100vh] w-[100vw] grid place-items-center cursor-none hello opacity-25 absolute z-10 left-0 top-0 -translate-y-[100%] transition-all ease-in-out duration-500 delay-300"
         }
       >
         <Hello setIsHello={setIsHello} />

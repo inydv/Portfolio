@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 export default function Banner() {
   // HTML
   return (
-    <div className="flex justify-between items-center max-w-[1200px] m-auto px-5 pt-5 gap-5 border-b-2">
+    <div className="flex justify-between items-center max-w-[1200px] m-auto px-5 pt-10 gap-5 border-b-2">
       <div className="flex-1 grid">
         <h1 className="text-5xl">&#60; Hello world &#62;</h1>
-        <p className="max-w-[650px] text-2xl mt-5">
+        <p className="max-w-[650px] text-xl mt-5">
           I'm Lokesh Yadav, A MERN Stack Developer based in New Delhi, India. I
           enjoy creating meaningful narratives through development and
           experimenting with new technology to convey stories.
