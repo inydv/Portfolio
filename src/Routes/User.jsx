@@ -5,7 +5,7 @@ import { routes } from "../Core/Routes";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import "../Styles/custom.css";
-import { Header } from "../Layouts/index";
+import { Footer, Header } from "../Layouts/index";
 
 export default function User() {
   // USE LOCATION
@@ -37,6 +37,7 @@ export default function User() {
             <Route exact path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
+        {location.pathname !== "/contact" && <Footer />}
       </div>
     </div>
   );

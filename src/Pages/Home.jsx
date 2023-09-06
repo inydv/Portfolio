@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
-import {
-  Banner,
-  SkillPieChart,
-  RandomFacts,
-  RandomImageGallery,
-  SkillGraph,
-  Knowmore,
-  Experience,
-} from "../Components/index";
+import { Banner, RandomImageGallery, Package } from "../Components/index";
 import { ParticlesContainer } from "../Shared/index";
+import ScrollProjects from "../Components/ScrollProjects";
 
 // MAIN FUNCTION
 export default function Home() {
@@ -24,11 +17,8 @@ export default function Home() {
         <Banner />
         <RandomImageGallery />
       </div>
-      <SkillPieChart />
-      <RandomFacts />
-      <SkillGraph />
-      <Experience />
-      <Knowmore />
+      <Package />
+      <ScrollProjects />
     </motion.div>
   );
 }

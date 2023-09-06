@@ -6,6 +6,7 @@ export default {
       colors: {
         customBlack: "#040406",
         secondary: "#fafafa",
+        customWhite: "#dedede"
       },
     },
   },

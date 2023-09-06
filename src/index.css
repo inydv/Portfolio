@@ -13,6 +13,8 @@
     padding: 0;
     font-family: 'Alice', serif;
     user-select: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* BODY */
@@ -22,6 +24,11 @@ body {
 
 /* BODY SCROLLBAR */
 body::-webkit-scrollbar {
+    display: none;
+}
+
+/* TEXTAREA SCROLLBAR */
+textarea::-webkit-scrollbar {
     display: none;
 }
 

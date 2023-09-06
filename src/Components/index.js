@@ -7,6 +7,8 @@ import SkillGraph from "./SkillGraph";
 import Package from "./Package";
 import Knowmore from "./Knowmore";
 import Experience from "./Experience";
+import Education from "./Education";
+import Certification from "./Certification";
 
 export {
   Hello,
@@ -17,5 +19,7 @@ export {
   SkillGraph,
   Package,
   Knowmore,
-  Experience
+  Experience,
+  Education,
+  Certification
 };
