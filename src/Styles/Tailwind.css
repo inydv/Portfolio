@@ -1,0 +1,4 @@
+/* TAILWIND */
+.hello_container {
+    @apply h-screen w-screen grid place-items-center cursor-none fixed z-20 left-0 top-0;
+}

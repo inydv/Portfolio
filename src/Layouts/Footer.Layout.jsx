@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import logo from "../Assets/logo.png";
-import {
-  BsFacebook,
-  BsLinkedin,
-  BsStackOverflow,
-  BsInstagram,
-} from "react-icons/bs";
-import { SiBuymeacoffee } from "react-icons/si";
+import { SiBuymeacoffee } from "@react-icons/all-files/si/SiBuymeacoffee";
+import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaStackOverflow } from "@react-icons/all-files/fa/FaStackOverflow";
+import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
+
 import world from "../Assets/world.gif";
 
 export default function Footer() {
@@ -29,9 +28,9 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="bg-customBlack pt-20 pb-5 px-5">
-      <div className="max-w-[1200px] m-auto">
-        <div className="flex items-center gap-5">
+    <div className="w-full h-screen py-20 px-20 bg-black rounded-tl-3xl rounded-tr-3xl grid place-content-center">
+      <div className="w-full">
+        <div className="w-full flex items-center gap-5">
           <img src={logo} alt="" className="h-16 w-16" />
           <h1 className="text-white text-6xl">Let&apos;s Work</h1>
         </div>
@@ -68,22 +67,22 @@ export default function Footer() {
             <ul className="inline-flex gap-5">
               <li>
                 <a href="">
-                  <BsInstagram color="#ffffff" size={20} />
+                  <FaInstagram color="#ffffff" size={20} />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <BsFacebook color="#ffffff" size={20} />
+                  <FaFacebook color="#ffffff" size={20} />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <BsLinkedin color="#ffffff" size={20} />
+                  <FaLinkedin color="#ffffff" size={20} />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <BsStackOverflow color="#ffffff" size={20} />
+                  <FaStackOverflow color="#ffffff" size={20} />
                 </a>
               </li>
               <li>

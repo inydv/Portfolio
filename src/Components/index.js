@@ -1,25 +1,17 @@
-import Hello from "./Hello";
-import Banner from "./Banner";
-import RandomFacts from "./RandomFacts";
-import RandomImageGallery from "./RandomImageGallery";
-import SkillPieChart from "./SkillPieChart";
-import SkillGraph from "./SkillGraph";
-import Package from "./Package";
-import Knowmore from "./Knowmore";
-import Experience from "./Experience";
-import Education from "./Education";
-import Certification from "./Certification";
+import LandingPage from "./LandingPage.Component";
+import Marquee from "./Marquee.Component";
+import About from "./About.Component";
+import Eyes from "./Eyes.Component";
+import Change from "./Change.Component";
+import KnowMore from "./KnowMore.Component";
+import Project from "./Project.Component";
 
 export {
-  Hello,
-  Banner,
-  SkillPieChart,
-  RandomFacts,
-  RandomImageGallery,
-  SkillGraph,
-  Package,
-  Knowmore,
-  Experience,
-  Education,
-  Certification
+  LandingPage,
+  Marquee,
+  About,
+  Eyes,
+  Change,
+  KnowMore,
+  Project
 };

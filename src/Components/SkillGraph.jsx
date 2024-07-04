@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import { Children } from "react";
 import { barGraph } from "../Constants/BarGraph.Constant";
 
 export default function SkillGraph() {

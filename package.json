@@ -10,17 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "autoprefixer": "^10.4.14",
-    "framer-motion": "^10.13.0",
+    "framer-motion": "^11.2.12",
+    "locomotive-scroll": "^5.0.0-beta.13",
     "postcss": "^8.4.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
-    "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^6.14.2",
-    "react-tsparticles": "^2.11.0",
-    "tailwindcss": "^3.3.3",
-    "tsparticles": "^2.11.0"
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
