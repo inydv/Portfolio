@@ -13,9 +13,9 @@ export default function App() {
       <Routes>
         <Route exact path={routes.Home} element={<Home />} />
         <Route exact path={routes.Contact} element={<Contact />} />
-        {/* <Route exact path={routes.About} element={<About />} />
+        <Route exact path={routes.About} element={<About />} />
         <Route exact path={routes.Work} element={<Work />} />
-        <Route exact path="*" element={<NotFound />} /> */}
+        <Route exact path="*" element={<NotFound />} />
       </Routes>
       {location.pathname !== "/contact" && <Footer />}
     </div>

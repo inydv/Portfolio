@@ -24,13 +24,13 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="bg-customBlack pt-20 pb-5 px-5">
+    <div className="pt-20 pb-5 px-5 text-black">
       <div className="max-w-[1200px] m-auto">
         <div className="flex items-center gap-5">
           <img src={logo} alt="" className="h-16 w-16" />
-          <h1 className="text-6xl text-white">Let&apos;s start a</h1>
+          <h1 className="text-6xl ">Let&apos;s start a</h1>
         </div>
-        <h1 className="text-6xl text-white mt-5">project together</h1>
+        <h1 className="text-6xl mt-5">project together</h1>
         <div className="py-28 flex gap-20">
           <ContactForm />
           <ContactDetails />
@@ -39,13 +39,13 @@ export default function Contact() {
           <div className="flex items-center gap-3">
             <img src={world} alt="" />
             <div>
-              <p className="text-white text-lg pb-2">LOCAL TIME</p>
-              <p className="text-white text-xl">{time} IST</p>
+              <p className=" text-lg pb-2">LOCAL TIME</p>
+              <p className=" text-xl">{time} IST</p>
             </div>
           </div>
           <div>
-            <p className="text-white text-lg pb-2">LOCATED IN</p>
-            <p className="text-white text-xl">NEW DELHI, IN</p>
+            <p className=" text-lg pb-2">LOCATED IN</p>
+            <p className=" text-xl">NEW DELHI, IN</p>
           </div>
         </div>
       </div>
