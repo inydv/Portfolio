@@ -3,7 +3,7 @@ import {
   Change,
   Eyes,
   KnowMore,
-  LandingPage,
+  Hero,
   Marquee,
   Project,
 } from "../Components/index";
@@ -11,7 +11,7 @@ import {
 export default function Home() {
   return (
     <>
-      <LandingPage />
+      <Hero />
       <Marquee />
       <About />
       <Eyes />

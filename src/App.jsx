@@ -2,13 +2,10 @@ import { Home, About, Contact, NotFound, Work } from "./Pages/index";
 import { routes } from "./Core/Routes";
 import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "./Layouts/index";
-// import LocomotiveScroll from "locomotive-scroll";
 
 export default function App() {
-  // new LocomotiveScroll();
-
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 max-w-[1920px] mx-auto relative">
       <Header />
       <Routes>
         <Route exact path={routes.Home} element={<Home />} />

@@ -20,24 +20,26 @@ const PACKAGES = [
 
 export default function About() {
   return (
-    <div className="w-full h-screen py-20 px-20 bg-green-500 text-black rounded-3xl grid place-content-center">
+    <div className="w-full md:min-h-screen py-20 px-4 md:px-20 bg-green-500 text-black rounded-3xl grid place-content-center">
       <div>
-        <p className="text-4xl w-3/4 leading-snug tracking-wide">
-          A MERN Stack Developer based in New Delhi, India. I enjoy creating
+        <p className="text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:w-3/4 leading-snug tracking-wide font-medium">
+          A Full Stack Developer based in New Delhi, India. I enjoy creating
           meaningful narratives through development and experimenting with new
           technology to convey stories.
         </p>
-        <div className="border-t-2 border-gray-700 mt-20 pt-20">
-          <h1 className="text-4xl tracking-wide mb-16">
-            I can help you with <span>.....</span>
+        <div className="border-t-2 border-gray-700 mt-10 md:mt-20 pt-10 md:pt-20">
+          <h1 className="text-2xl md:text-3xl xl:text-4xl tracking-wide mb-8 md:mb-16 font-medium">
+            I can help you with<span>.....</span>
           </h1>
-          <div className="flex gap-10">
+          <div className="flex flex-col md:flex-row gap-10">
             {Children.toArray(
               PACKAGES?.map(({ content, tag }, index) => (
                 <div className="flex-1">
-                  <p className="text-2xl">0{index + 1}</p>
-                  <h2 className="text-3xl my-5">{tag}</h2>
-                  <p className="text-xl">{content}</p>
+                  <p className="text-xl md:text-2xl font-semibold">0{index + 1}</p>
+                  <h2 className="text-xl md:text-2xl xl:text-3xl my-5">
+                    {tag}
+                  </h2>
+                  <p className="text-base md:text-xl">{content}</p>
                 </div>
               ))
             )}

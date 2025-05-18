@@ -13,18 +13,20 @@ const KNOWMORE = [
 
 export default function KnowMore() {
   return (
-    <div className="w-full h-screen py-20 px-20 bg-[#cdea68] text-black rounded-3xl grid place-content-center">
+    <div className="w-full md:min-h-screen py-20 px-4 md:px-20 bg-[#cdea68] text-black rounded-3xl grid place-content-center">
       <div>
-        <h1 className="text-4xl tracking-wide mb-16">
-          Know more / Speech <span>.....</span>
+        <h1 className="text-2xl md:text-3xl xl:text-4xl tracking-wide font-medium mb-8 md:mb-16">
+          Know more / Speech<span>.....</span>
         </h1>
         {Children.toArray(
           KNOWMORE?.map((item) => (
-            <p className="text-2xl mb-10 tracking-wide">{item}</p>
+            <p className="text-base md:text-2xl mb-8 md:mb-10 tracking-wide">
+              {item}
+            </p>
           ))
         )}
         <a
-          className="px-5 py-2 border-2 rounded-full border-gray-700 flex items-center gap-2 w-fit mt-16"
+          className="px-5 py-2 border-2 rounded-full border-gray-700 flex items-center gap-2 w-fit mt-8 md:mt-16 text-sm lg:text-base"
           href="#"
         >
           <span>MY RESUME</span> <FiArrowUpRight size={25} />

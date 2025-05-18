@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { routes } from "../Core/Routes";
 import { Children, useCallback, useEffect, useState } from "react";
 
+const SCROLL_THRESHOLD = 50;
 const ROUTES = [
   { name: "Work", to: routes.Home },
   { name: "About", to: routes.About },
@@ -14,22 +15,20 @@ export default function Header() {
 
   const controlNavbar = useCallback(() => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        // if scroll down hide the navbar
+      const diff = window.scrollY - lastScrollY;
+      if (diff > SCROLL_THRESHOLD) {
         setShowNavbar(false);
-      } else {
-        // if scroll up show the navbar
+        setLastScrollY(window.scrollY);
+      } else if (diff < -SCROLL_THRESHOLD) {
         setShowNavbar(true);
+        setLastScrollY(window.scrollY);
       }
-      setLastScrollY(window.scrollY);
     }
   }, [lastScrollY]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavbar);
-
-      // cleanup function
       return () => {
         window.removeEventListener("scroll", controlNavbar);
       };
@@ -38,20 +37,26 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed z-50 left-0 w-full px-20 py-4 text-black flex justify-between gap-10 items-center backdrop-blur-sm ${
+      className={`fixed z-10 left-0 w-full px-4 md:px-20 py-4 text-black flex justify-between gap-4 md:gap-10 items-center backdrop-blur-sm transition-all duration-300 ${
         showNavbar ? "top-0" : "-top-20"
       }`}
     >
       <div>
-        <Link className="text-xl p-2 inline-block string_text" to={routes.Home}>
-          © Code by Lokesh Yadav
+        <Link
+          className="text-base md:text-xl px-0 py-1 md:p-2 whitespace-nowrap font-medium"
+          to={routes.Home}
+        >
+          © Code by Lokesh
         </Link>
       </div>
-      <ul className="flex gap-12">
+      <ul className="flex gap-4 md:gap-12">
         {Children?.toArray(
           ROUTES?.map(({ name, to }) => (
             <li>
-              <Link className="text-xl p-2 inline-block string_text" to={to}>
+              <Link
+                className="text-base md:text-xl px-0 py-1 md:p-2 font-medium"
+                to={to}
+              >
                 {name}
               </Link>
             </li>

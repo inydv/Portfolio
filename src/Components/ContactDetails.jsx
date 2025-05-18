@@ -17,9 +17,6 @@ export default function ContactDetails() {
           <a href="#">Linkedin</a>
         </li>
         <li className="text-xl mt-2">
-          <a href="#">Stackover Flow</a>
-        </li>
-        <li className="text-xl mt-2">
           <a href="#">Github</a>
         </li>
       </ul>
